@@ -6,7 +6,7 @@ body {
 	max-width: 500px;
 	margin: 0 auto;
 	padding: 20px;
-	border: 1px solid #ffc4dd;
+	border: 1px solid #fb3776;
 	border-radius: 10px;
 	text-align: center;
 	font-size: 25px;
@@ -17,6 +17,8 @@ h1 {
 	margin-top: 0;
   color:#fb3776;
   text-align: center;
+  font-weight: 400;
+  display: -ms-inline-grid;
 }
 
 #choices li {
@@ -34,7 +36,6 @@ button {
   color: #FFFFFF;
   cursor: pointer;
   display: -ms-inline-grid;
-  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   font-weight: 500;
   height: 40px;
@@ -51,18 +52,20 @@ button {
   user-select: none;
   -webkit-user-select: none;
   touch-action: manipulation;
-  text-align: center
+  text-align: center;
+  transition: all .5s ease-in-out;
 }
 
 button:hover,
 button:focus {
   background-color: #F082AC;
+  transform: scale(1.1);
 }
 
 h2 {
 	font-size: 20px;
-	font-style: italic;
-	color:#3D4855	
+	color:#3D4855;
+  font-weight: 300;	
 }
 
 .vtex-logo {
@@ -87,3 +90,19 @@ h2 {
     margin-top: 0px;
     display: inline-table
         }
+
+.progress-bar {
+  width: 0%;
+  height: 5px;
+  background-color: #fb3776;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  transition: 0.4s linear;  
+  transition-property: width, background-color;
+}
+
+#question {
+transition: 0.4s linear;
+}
+
+
